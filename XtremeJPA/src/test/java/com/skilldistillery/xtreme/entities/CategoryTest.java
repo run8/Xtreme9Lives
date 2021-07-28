@@ -2,6 +2,7 @@ package com.skilldistillery.xtreme.entities;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -44,6 +45,13 @@ class CategoryTest {
 	void test() {
 		assertNotNull(cat);
 		assertEquals("skydiving", cat.getName());
+	}
+	
+	@Test
+	void testCategroyMappingOneToManyRelationship() {
+		assertNotNull(cat);
+		assertEquals("skydiving", cat.getName());
+		assertTrue(cat.getPosts().size() > 0);
 	}
 
 }

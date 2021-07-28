@@ -1,0 +1,18 @@
+package com.skilldistillery.xtreme.repositories.services;
+
+import java.util.List;
+
+import com.skilldistillery.xtreme.entities.Comment;
+
+public class CommentServiceImpl implements CommentService {
+	
+	@Override
+	public List<Comment> commentsForPostId(int postId) {
+		List<Comment> comments = null;
+		if (postRepo.existsById(postId)) {
+			comments = 
+		}
+		return null;
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.skilldistillery.xtreme.repositories.services;
+
+import java.util.List;
+
+import com.skilldistillery.xtreme.entities.Comment;
+
+public class CommentServiceImpl {
+	
+	@Override
+	public List<Comment> commentsForPostId(int postId) {
+		List<Comment> comments = null;
+		return null;
+	}
+
+}

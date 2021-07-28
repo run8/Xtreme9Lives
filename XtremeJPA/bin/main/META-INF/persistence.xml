@@ -12,7 +12,7 @@
  
 	    <class>com.skilldistillery.xtreme.entities.Category</class> 	
 	    <class>com.skilldistillery.xtreme.entities.Post</class> 	
-	    <class>com.skilldistillery.xtreme.entities.Comment</class> 	
+	   <class>com.skilldistillery.xtreme.entities.Comment</class> 
     
 		<properties>		
 			<property name="javax.persistence.jdbc.url"

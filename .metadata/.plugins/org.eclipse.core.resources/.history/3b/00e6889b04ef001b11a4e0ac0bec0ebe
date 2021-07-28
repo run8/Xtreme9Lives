@@ -1,0 +1,35 @@
+package com.skilldistillery.xtreme.controllers;
+
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.skilldistillery.xtreme.data.PostDAO;
+import com.skilldistillery.xtreme.entities.Post;
+
+@RequestMapping("api")
+@RestController
+public class PostController {
+	
+	@Autowired
+	private PostDAO postDao;
+	
+	@GetMapping("ping")
+	public String ping() {
+		
+		return "pong";
+	}
+	
+//	@GetMapping("posts/{postId}")
+//	public Post show(
+//			@PathVariable Integer postId,
+//			HttpServletResponse res
+//			) {
+//		Post post = postDao.findById(postId);
+//		
+//	}
+}
